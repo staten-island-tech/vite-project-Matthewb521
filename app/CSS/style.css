@@ -5,6 +5,7 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
+  font-family: "Protest Guerrilla", serif;
 }
 
 .protest-guerrilla-regular {
@@ -14,15 +15,7 @@ body,
 }
 
 body {
-  background-color: var(--primary);
-}
-
-.warm {
-  --primary: var(--light-red);
-}
-
-.cool {
-  --primary: var(--light-blue);
+  background-color: #f5fffa;
 }
 
 h1 {
@@ -47,27 +40,65 @@ p {
   font-size: var(--p);
 }
 
-.song-container {
+#song-container {
   display: flex;
-  width: 50%;
-  margin: 2.5rem auto;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  margin: 10rem auto 2.5rem;
+  padding: 0 2rem;
 }
 
 .card {
   width: 26%;
   height: 30rem;
   margin: 1rem;
-  border: 2px solid beige;
+  border: 2px solid var(--beige);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   overflow: hidden;
-  background-color: beige;
-  background-size: cover;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  background-color: var(--beige);
+  box-shadow: 5px 5px 15px var(--black);
   transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+.btn {
+  background: linear-gradient(135deg, var(--teal-light), var(--teal-dark));
+  color: var(--white);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px var(--black);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, var(--light-pink), var(--peach));
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px var(--black);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0px 2px 4px var(--black);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6.75rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fffdd0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }

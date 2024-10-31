@@ -3,8 +3,13 @@
   --dark-blue: #135cc5;
   --light-red: #dc2626;
   --green: #70e42e;
-
-  --primary: var(--green);
+  --teal-light: #38ada9;
+  --teal-dark: #079992;
+  --white: #ffffff;
+  --beige: #f5f5dc;
+  --black: #00000033;
+  --light-pink: #f06595;
+  --peach: #ff6b6b;
 
   --h1: 2.986rem;
   --h2: 2.488rem;
