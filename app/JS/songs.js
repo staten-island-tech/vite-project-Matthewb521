@@ -5,7 +5,7 @@ export const motleyCrueSongs = [
     album: "Dr. Feelgood",
     releaseYear: 1989,
     timesPlayed: 1200,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Dr_feelgood.png",
     altText: "",
   },
   {
@@ -13,7 +13,7 @@ export const motleyCrueSongs = [
     album: "Dr. Feelgood",
     releaseYear: 1989,
     timesPlayed: 1150,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Dr_feelgood.png",
     altText: "",
   },
   {
@@ -21,7 +21,7 @@ export const motleyCrueSongs = [
     album: "Dr. Feelgood",
     releaseYear: 1989,
     timesPlayed: 950,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Dr_feelgood.png",
     altText: "",
   },
   {
@@ -29,7 +29,7 @@ export const motleyCrueSongs = [
     album: "Dr. Feelgood",
     releaseYear: 1989,
     timesPlayed: 800,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Dr_feelgood.png",
     altText: "",
   },
   {
@@ -37,7 +37,7 @@ export const motleyCrueSongs = [
     album: "Dr. Feelgood",
     releaseYear: 1989,
     timesPlayed: 780,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Dr_feelgood.png",
     altText: "",
   },
 
@@ -47,7 +47,7 @@ export const motleyCrueSongs = [
     album: "Shout at the Devil",
     releaseYear: 1983,
     timesPlayed: 1500,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Shout_devil.png",
     altText: "",
   },
   {
@@ -55,7 +55,7 @@ export const motleyCrueSongs = [
     album: "Shout at the Devil",
     releaseYear: 1983,
     timesPlayed: 1400,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Shout_devil.png",
     altText: "",
   },
   {
@@ -63,7 +63,7 @@ export const motleyCrueSongs = [
     album: "Shout at the Devil",
     releaseYear: 1983,
     timesPlayed: 900,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Shout_devil.png",
     altText: "",
   },
   {
@@ -71,7 +71,7 @@ export const motleyCrueSongs = [
     album: "Shout at the Devil",
     releaseYear: 1983,
     timesPlayed: 600,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Shout_devil.png",
     altText: "",
   },
   {
@@ -79,7 +79,7 @@ export const motleyCrueSongs = [
     album: "Shout at the Devil",
     releaseYear: 1983,
     timesPlayed: 500,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Shout_devil.png",
     altText: "",
   },
 
@@ -89,7 +89,7 @@ export const motleyCrueSongs = [
     album: "The Dirt Soundtrack",
     releaseYear: 2019,
     timesPlayed: 400,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Dirt_soundtrack.png",
     altText: "",
   },
   {
@@ -97,7 +97,7 @@ export const motleyCrueSongs = [
     album: "The Dirt Soundtrack",
     releaseYear: 2019,
     timesPlayed: 300,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Dirt_soundtrack.png",
     altText: "",
   },
   {
@@ -105,7 +105,7 @@ export const motleyCrueSongs = [
     album: "The Dirt Soundtrack",
     releaseYear: 2019,
     timesPlayed: 350,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Dirt_soundtrack.png",
     altText: "",
   },
   {
@@ -113,7 +113,7 @@ export const motleyCrueSongs = [
     album: "The Dirt Soundtrack",
     releaseYear: 2019,
     timesPlayed: 200,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Dirt_soundtrack.png",
     altText: "",
   },
   {
@@ -121,7 +121,7 @@ export const motleyCrueSongs = [
     album: "The Dirt Soundtrack",
     releaseYear: 2019,
     timesPlayed: 250,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Dirt_soundtrack.png",
     altText: "",
   },
 
@@ -131,7 +131,7 @@ export const motleyCrueSongs = [
     album: "Too Fast for Love",
     releaseYear: 1981,
     timesPlayed: 1000,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Too_fast.png",
     altText: "",
   },
   {
@@ -139,7 +139,7 @@ export const motleyCrueSongs = [
     album: "Too Fast for Love",
     releaseYear: 1981,
     timesPlayed: 800,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Too_fast.png",
     altText: "",
   },
   {
@@ -147,7 +147,7 @@ export const motleyCrueSongs = [
     album: "Too Fast for Love",
     releaseYear: 1981,
     timesPlayed: 750,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Too_fast.png",
     altText: "",
   },
   {
@@ -155,7 +155,7 @@ export const motleyCrueSongs = [
     album: "Too Fast for Love",
     releaseYear: 1981,
     timesPlayed: 900,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Too_fast.png",
     altText: "",
   },
   {
@@ -163,7 +163,7 @@ export const motleyCrueSongs = [
     album: "Too Fast for Love",
     releaseYear: 1981,
     timesPlayed: 650,
-    imageUrl: "",
+    imageUrl: "public/album_covers/Too_fast.png",
     altText: "",
   },
 ];
