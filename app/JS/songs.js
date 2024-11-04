@@ -6,7 +6,7 @@ export const motleyCrueSongs = [
     releaseYear: 1989,
     timesPlayed: 1200,
     imageUrl: "public/album_covers/Dr_feelgood.png",
-    altText: "",
+    altText: "Album cover of Dr. Feelgood, featuring the song Dr. Feelgood",
   },
   {
     name: "Kickstart My Heart",
@@ -14,7 +14,8 @@ export const motleyCrueSongs = [
     releaseYear: 1989,
     timesPlayed: 1150,
     imageUrl: "public/album_covers/Dr_feelgood.png",
-    altText: "",
+    altText:
+      "Album cover of Dr. Feelgood, featuring the song Kickstart My Heart",
   },
   {
     name: "Same Ol' Situation (S.O.S.)",
@@ -22,7 +23,8 @@ export const motleyCrueSongs = [
     releaseYear: 1989,
     timesPlayed: 950,
     imageUrl: "public/album_covers/Dr_feelgood.png",
-    altText: "",
+    altText:
+      "Album cover of Dr. Feelgood, featuring the song Same Ol' Situation (S.O.S.)",
   },
   {
     name: "Without You",
@@ -30,7 +32,7 @@ export const motleyCrueSongs = [
     releaseYear: 1989,
     timesPlayed: 800,
     imageUrl: "public/album_covers/Dr_feelgood.png",
-    altText: "",
+    altText: "Album cover of Dr. Feelgood, featuring the song Without You",
   },
   {
     name: "Don't Go Away Mad (Just Go Away)",
@@ -38,7 +40,8 @@ export const motleyCrueSongs = [
     releaseYear: 1989,
     timesPlayed: 780,
     imageUrl: "public/album_covers/Dr_feelgood.png",
-    altText: "",
+    altText:
+      "Album cover of Dr. Feelgood, featuring the song Don't Go Away Mad (Just Go Away)",
   },
 
   // Shout at the Devil (1983)
@@ -48,7 +51,8 @@ export const motleyCrueSongs = [
     releaseYear: 1983,
     timesPlayed: 1500,
     imageUrl: "public/album_covers/Shout_devil.png",
-    altText: "",
+    altText:
+      "Album cover of Shout at the Devil, featuring the song Shout at the Devil",
   },
   {
     name: "Looks That Kill",
@@ -56,7 +60,8 @@ export const motleyCrueSongs = [
     releaseYear: 1983,
     timesPlayed: 1400,
     imageUrl: "public/album_covers/Shout_devil.png",
-    altText: "",
+    altText:
+      "Album cover of Shout at the Devil, featuring the song Looks That Kill",
   },
   {
     name: "Too Young to Fall in Love",
@@ -64,7 +69,8 @@ export const motleyCrueSongs = [
     releaseYear: 1983,
     timesPlayed: 900,
     imageUrl: "public/album_covers/Shout_devil.png",
-    altText: "",
+    altText:
+      "Album cover of Shout at the Devil, featuring the song Too Young to Fall in Love",
   },
   {
     name: "Bastard",
@@ -72,7 +78,7 @@ export const motleyCrueSongs = [
     releaseYear: 1983,
     timesPlayed: 600,
     imageUrl: "public/album_covers/Shout_devil.png",
-    altText: "",
+    altText: "Album cover of Shout at the Devil, featuring the song Bastard",
   },
   {
     name: "Helter Skelter",
@@ -80,7 +86,8 @@ export const motleyCrueSongs = [
     releaseYear: 1983,
     timesPlayed: 500,
     imageUrl: "public/album_covers/Shout_devil.png",
-    altText: "",
+    altText:
+      "Album cover of Shout at the Devil, featuring the song Helter Skelter",
   },
 
   // The Dirt Soundtrack (2019)
@@ -90,7 +97,8 @@ export const motleyCrueSongs = [
     releaseYear: 2019,
     timesPlayed: 400,
     imageUrl: "public/album_covers/Dirt_soundtrack.png",
-    altText: "",
+    altText:
+      "Album cover of The Dirt Soundtrack, featuring the song The Dirt (Est. 1981)",
   },
   {
     name: "Ride with the Devil",
@@ -98,7 +106,8 @@ export const motleyCrueSongs = [
     releaseYear: 2019,
     timesPlayed: 300,
     imageUrl: "public/album_covers/Dirt_soundtrack.png",
-    altText: "",
+    altText:
+      "Album cover of The Dirt Soundtrack, featuring the song Ride with the Devil",
   },
   {
     name: "Crash and Burn",
@@ -106,7 +115,8 @@ export const motleyCrueSongs = [
     releaseYear: 2019,
     timesPlayed: 350,
     imageUrl: "public/album_covers/Dirt_soundtrack.png",
-    altText: "",
+    altText:
+      "Album cover of The Dirt Soundtrack, featuring the song Crash and Burn",
   },
   {
     name: "Like a Virgin",
@@ -114,7 +124,8 @@ export const motleyCrueSongs = [
     releaseYear: 2019,
     timesPlayed: 200,
     imageUrl: "public/album_covers/Dirt_soundtrack.png",
-    altText: "",
+    altText:
+      "Album cover of The Dirt Soundtrack, featuring the song Like a Virgin",
   },
   {
     name: "On with the Show",
@@ -122,7 +133,8 @@ export const motleyCrueSongs = [
     releaseYear: 2019,
     timesPlayed: 250,
     imageUrl: "public/album_covers/Dirt_soundtrack.png",
-    altText: "",
+    altText:
+      "Album cover of The Dirt Soundtrack, featuring the song On with the Show",
   },
 
   // Too Fast for Love (1981)
@@ -132,7 +144,7 @@ export const motleyCrueSongs = [
     releaseYear: 1981,
     timesPlayed: 1000,
     imageUrl: "public/album_covers/Too_fast.png",
-    altText: "",
+    altText: "Album cover of Too Fast for Love, featuring the song Live Wire",
   },
   {
     name: "Take Me to the Top",
@@ -140,7 +152,8 @@ export const motleyCrueSongs = [
     releaseYear: 1981,
     timesPlayed: 800,
     imageUrl: "public/album_covers/Too_fast.png",
-    altText: "",
+    altText:
+      "Album cover of Too Fast for Love, featuring the song Take Me to the Top",
   },
   {
     name: "Piece of Your Action",
@@ -148,7 +161,8 @@ export const motleyCrueSongs = [
     releaseYear: 1981,
     timesPlayed: 750,
     imageUrl: "public/album_covers/Too_fast.png",
-    altText: "",
+    altText:
+      "Album cover of Too Fast for Love, featuring the song Piece of Your Action",
   },
   {
     name: "Too Fast for Love",
@@ -156,7 +170,8 @@ export const motleyCrueSongs = [
     releaseYear: 1981,
     timesPlayed: 900,
     imageUrl: "public/album_covers/Too_fast.png",
-    altText: "",
+    altText:
+      "Album cover of Too Fast for Love, featuring the song Too Fast for Love",
   },
   {
     name: "Merry-Go-Round",
@@ -164,6 +179,7 @@ export const motleyCrueSongs = [
     releaseYear: 1981,
     timesPlayed: 650,
     imageUrl: "public/album_covers/Too_fast.png",
-    altText: "",
+    altText:
+      "Album cover of Too Fast for Love, featuring the song Merry-Go-Round",
   },
 ];
