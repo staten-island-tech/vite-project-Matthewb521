@@ -124,20 +124,23 @@ document.querySelector("#btn-3").addEventListener("click", function () {
 
     songContainer.innerHTML = "";
 
-    motleyCrueSongs.forEach((song) => {
-      if (song.album === "Shout at the Devil") {
-        const card = `
-          <div class="card card-ani">
-            <h2>${song.name}</h2>
-            <img class="images" src="${song.imageUrl}" alt="${song.altText}" />
-            <h3>Album: ${song.album}</h3>
-            <p>Release Year: ${song.releaseYear}</p>
-            <p>Times Played: ${song.timesPlayed}</p>
-          </div>
-        `;
-        songContainer.innerHTML += card;
-      }
-    });
+    const shoutAtTheDevilSongs = motleyCrueSongs
+      .filter(
+        (motleyCrueSongs) => motleyCrueSongs.album === "Shout at the Devil"
+      )
+      .map(
+        (song) => `
+    <div class="card card-ani">
+      <h2>${song.name}</h2>
+      <img class="images" src="${song.imageUrl}" alt="${song.altText}" />
+      <h3>Album: ${song.album}</h3>
+      <p>Release Year: ${song.releaseYear}</p>
+      <p>Times Played: ${song.timesPlayed}</p>
+    </div>
+  `
+      )
+      .join("");
+    songContainer.innerHTML = shoutAtTheDevilSongs;
   }
 });
 
