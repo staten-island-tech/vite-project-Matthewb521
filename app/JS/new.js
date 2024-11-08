@@ -4,6 +4,7 @@ import { motleyCrueSongs } from "./songs.js";
 
 const songContainer = document.getElementById("song-container");
 
+
 function createSongCard(song) {
   return `
       <div class="card card-ani">
@@ -23,35 +24,7 @@ function displaySongs(albumFilter) {
     .join("");
 }
 
-function displaySorted(songs) {
-  songContainer.innerHTML = songs.map(createSongCard).join("");
-}
-
 displaySongs();
-
-document
-  .querySelector("#btn-filterLowToHigh")
-  .addEventListener("click", function () {
-    const sortedSongs = [...motleyCrueSongs].sort(
-      (a, b) => a.timesPlayed - b.timesPlayed
-    );
-    displaySorted(sortedSongs);
-  });
-
-document
-  .querySelector("#btn-filterHighToLow")
-  .addEventListener("click", function () {
-    const sortedSongs = [...motleyCrueSongs].sort(
-      (a, b) => b.timesPlayed - a.timesPlayed
-    );
-    displaySorted(sortedSongs);
-  });
-
-document
-  .querySelector("#btn-clearFilters")
-  .addEventListener("click", function () {
-    displaySongs();
-  });
 
 document.querySelector("#btn-0").addEventListener("click", function () {
   const classesToRemove = [

@@ -2,175 +2,43 @@ import "../CSS/style.css";
 import "../CSS/variable.css";
 import { motleyCrueSongs } from "./songs.js";
 
-const songContainer = document.getElementById("song-container");
+function createSongCard(song) {
+  return `
+      <div class="card card-ani">
+        <h2>${song.name}</h2>
+        <img class="images" src="${song.imageUrl}" alt="${song.altText}" />
+        <h3>Album: ${song.album}</h3>
+        <p>Release Year: ${song.releaseYear}</p>
+        <p>Times Played: ${song.timesPlayed}</p>
+      </div>
+    `;
+}
 
-motleyCrueSongs.forEach((song) => {
-  const card = `
-        <div class="card card-ani">
-          <h2>${song.name}</h2>
-          <img class="images" src="${song.imageUrl}" alt="${song.altText}" />
-          <h3>Album: ${song.album}</h3>
-          <p>Release Year: ${song.releaseYear}</p>
-          <p>Times Played: ${song.timesPlayed}</p>
-        </div>
-      `;
-  songContainer.innerHTML += card;
-});
+function displaySorted(songs) {
+  songContainer.innerHTML = songs.map(createSongCard).join("");
+}
 
-document.querySelector("#btn-0").addEventListener("click", function () {
-  const classesToRemove = [
-    "dr_feelgood",
-    "dirt_soundtrack",
-    "shout_devil",
-    "too_fast",
-  ];
-
-  if (classesToRemove.some((cls) => document.body.classList.contains(cls))) {
-    document.body.classList.add("all_songs");
-    document.body.classList.remove(...classesToRemove);
-
-    songContainer.innerHTML = "";
-
-    motleyCrueSongs.forEach((song) => {
-      const card = `
-        <div class="card card-ani">
-          <h2>${song.name}</h2>
-          <img class="images" src="${song.imageUrl}" alt="${song.altText}" />
-          <h3>Album: ${song.album}</h3>
-          <p>Release Year: ${song.releaseYear}</p>
-          <p>Times Played: ${song.timesPlayed}</p>
-        </div>
-      `;
-      songContainer.innerHTML += card;
-    });
-  }
-});
-
-document.querySelector("#btn-1").addEventListener("click", function () {
-  const classesToRemove = [
-    "all_songs",
-    "dirt_soundtrack",
-    "shout_devil",
-    "too_fast",
-  ];
-
-  if (classesToRemove.some((cls) => document.body.classList.contains(cls))) {
-    document.body.classList.add("dr_feelgood");
-    document.body.classList.remove(...classesToRemove);
-
-    songContainer.innerHTML = "";
-
-    const drFeelgoodSongs = motleyCrueSongs.filter(
-      (song) => song.album === "Dr. Feelgood"
+document
+  .querySelector("#btn-filterLowToHigh")
+  .addEventListener("click", function () {
+    const sortedSongs = [...motleyCrueSongs].sort(
+      (a, b) => a.timesPlayed - b.timesPlayed
     );
+    displaySorted(sortedSongs);
+  });
 
-    drFeelgoodSongs.forEach((song) => {
-      const card = `
-        <div class="card card-ani">
-          <h2>${song.name}</h2>
-          <img class="images" src="${song.imageUrl}" alt="${song.altText}" />
-          <h3>Album: ${song.album}</h3>
-          <p>Release Year: ${song.releaseYear}</p>
-          <p>Times Played: ${song.timesPlayed}</p>
-        </div>
-      `;
-      songContainer.innerHTML += card;
-    });
-  }
-});
+document
+  .querySelector("#btn-filterHighToLow")
+  .addEventListener("click", function () {
+    const sortedSongs = [...motleyCrueSongs].sort(
+      (a, b) => b.timesPlayed - a.timesPlayed
+    );
+    displaySorted(sortedSongs);
+  });
 
-document.querySelector("#btn-2").addEventListener("click", function () {
-  const classesToRemove = [
-    "all_songs",
-    "dr_feelgood",
-    "shout_devil",
-    "too_fast",
-  ];
+document
+  .querySelector("#btnclearFilters")
+  .addEventListener("click", function () {
+    displaySorted();
+  });
 
-  if (classesToRemove.some((cls) => document.body.classList.contains(cls))) {
-    document.body.classList.add("dirt_soundtrack");
-    document.body.classList.remove(...classesToRemove);
-
-    songContainer.innerHTML = "";
-
-    motleyCrueSongs.forEach((song) => {
-      if (song.album === "The Dirt Soundtrack") {
-        const card = `
-          <div class="card card-ani">
-            <h2>${song.name}</h2>
-            <img class="images" src="${song.imageUrl}" alt="${song.altText}" />
-            <h3>Album: ${song.album}</h3>
-            <p>Release Year: ${song.releaseYear}</p>
-            <p>Times Played: ${song.timesPlayed}</p>
-          </div>
-        `;
-        songContainer.innerHTML += card;
-      }
-    });
-  }
-});
-
-document.querySelector("#btn-3").addEventListener("click", function () {
-  const classesToRemove = [
-    "all_songs",
-    "dirt_soundtrack",
-    "dr_feelgood",
-    "too_fast",
-  ];
-
-  if (classesToRemove.some((cls) => document.body.classList.contains(cls))) {
-    document.body.classList.add("shout_devil");
-    document.body.classList.remove(...classesToRemove);
-
-    songContainer.innerHTML = "";
-
-    const shoutAtTheDevilSongs = motleyCrueSongs
-      .filter(
-        (motleyCrueSongs) => motleyCrueSongs.album === "Shout at the Devil"
-      )
-      .map(
-        (song) => `
-    <div class="card card-ani">
-      <h2>${song.name}</h2>
-      <img class="images" src="${song.imageUrl}" alt="${song.altText}" />
-      <h3>Album: ${song.album}</h3>
-      <p>Release Year: ${song.releaseYear}</p>
-      <p>Times Played: ${song.timesPlayed}</p>
-    </div>
-  `
-      )
-      .join("");
-    songContainer.innerHTML = shoutAtTheDevilSongs;
-  }
-});
-
-document.querySelector("#btn-4").addEventListener("click", function () {
-  const classesToRemove = [
-    "all_songs",
-    "dirt_soundtrack",
-    "shout_devil",
-    "dr_feelgood",
-  ];
-
-  if (classesToRemove.some((cls) => document.body.classList.contains(cls))) {
-    document.body.classList.add("too_fast");
-    document.body.classList.remove(...classesToRemove);
-
-    songContainer.innerHTML = "";
-
-    motleyCrueSongs.forEach((song) => {
-      if (song.album === "Too Fast for Love") {
-        const card = `
-          <div class="card card-ani">
-            <h2>${song.name}</h2>
-            <img class="images" src="${song.imageUrl}" alt="${song.altText}" />
-            <h3>Album: ${song.album}</h3>
-            <p>Release Year: ${song.releaseYear}</p>
-            <p>Times Played: ${song.timesPlayed}</p>
-          </div>
-        `;
-        songContainer.innerHTML += card;
-      }
-    });
-  }
-});
