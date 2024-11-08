@@ -23,11 +23,35 @@ function displaySongs(albumFilter) {
     .join("");
 }
 
-function displaySongs2(timesPlayed) {
-  songContainer.innerhtml = motleyCrueSongs;
+function displaySorted(songs) {
+  songContainer.innerHTML = songs.map(createSongCard).join("");
 }
 
 displaySongs();
+
+document
+  .querySelector("#btn-filterLowToHigh")
+  .addEventListener("click", function () {
+    const sortedSongs = [...motleyCrueSongs].sort(
+      (a, b) => a.timesPlayed - b.timesPlayed
+    );
+    displaySorted(sortedSongs);
+  });
+
+document
+  .querySelector("#btn-filterHighToLow")
+  .addEventListener("click", function () {
+    const sortedSongs = [...motleyCrueSongs].sort(
+      (a, b) => b.timesPlayed - a.timesPlayed
+    );
+    displaySorted(sortedSongs);
+  });
+
+document
+  .querySelector("#btn-clearFilters")
+  .addEventListener("click", function () {
+    displaySongs();
+  });
 
 document.querySelector("#btn-0").addEventListener("click", function () {
   const classesToRemove = [

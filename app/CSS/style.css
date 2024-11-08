@@ -104,6 +104,21 @@ p {
   z-index: 1000;
 }
 
+#filter-container {
+  width: 10rem;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--primary);
+  box-shadow: 0rem 0.4rem 0.8rem var(--black);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .all_songs {
   --primary: var(--beige);
   --secondary: var(--white);
