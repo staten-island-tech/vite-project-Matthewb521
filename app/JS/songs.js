@@ -5,7 +5,7 @@ export const motleyCrueSongs = [
     album: "Dr. Feelgood",
     releaseYear: 1989,
     timesPlayed: 1200,
-    imageUrl: "./album_covers/Dr_feelgood.png",
+    imageUrl: "./album_covers/Dr_Feelgood.png",
     altText: "Album cover of Dr. Feelgood, featuring the song Dr. Feelgood",
   },
   {
@@ -13,7 +13,7 @@ export const motleyCrueSongs = [
     album: "Dr. Feelgood",
     releaseYear: 1989,
     timesPlayed: 1150,
-    imageUrl: "./album_covers/Dr_feelgood.png",
+    imageUrl: "./album_covers/Dr_Feelgood.png",
     altText:
       "Album cover of Dr. Feelgood, featuring the song Kickstart My Heart",
   },
@@ -22,7 +22,7 @@ export const motleyCrueSongs = [
     album: "Dr. Feelgood",
     releaseYear: 1989,
     timesPlayed: 950,
-    imageUrl: "./album_covers/Dr_feelgood.png",
+    imageUrl: "./album_covers/Dr_Feelgood.png",
     altText:
       "Album cover of Dr. Feelgood, featuring the song Same Ol' Situation (S.O.S.)",
   },
@@ -31,7 +31,7 @@ export const motleyCrueSongs = [
     album: "Dr. Feelgood",
     releaseYear: 1989,
     timesPlayed: 800,
-    imageUrl: "./album_covers/Dr_feelgood.png",
+    imageUrl: "./album_covers/Dr_Feelgood.png",
     altText: "Album cover of Dr. Feelgood, featuring the song Without You",
   },
   {
@@ -39,7 +39,7 @@ export const motleyCrueSongs = [
     album: "Dr. Feelgood",
     releaseYear: 1989,
     timesPlayed: 780,
-    imageUrl: "./album_covers/Dr_feelgood.png",
+    imageUrl: "./album_covers/Dr_Feelgood.png",
     altText:
       "Album cover of Dr. Feelgood, featuring the song Don't Go Away Mad (Just Go Away)",
   },
